@@ -3,8 +3,8 @@
 > ESLint rule to enforce consistent method implementation styles between TypeScript interfaces and their implementations.
 
 [![npm](https://img.shields.io/npm/v/eslint-plugin-interface-method-style)](https://www.npmjs.com/package/eslint-plugin-interface-method-style)
-[![npm](https://img. v/npm/dt/eslint-plugin-interface-method-style)](https://www.npmjs.com/
-
+[![npm](https://img.shields.io/npm/dt/eslint-plugin-interface-method-style)](https://www.npmjs.com/package/eslint-plugin-interface-method-style)
+  
 
 ## Table of Contents
 
