@@ -1,0 +1,21 @@
+{
+  "name": "eslint-plugin-interface-method-style",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "Egor Avakumov",
+  "license": "MIT",
+  "description": "",
+  "packageManager": "yarn@4.5.2",
+  "devDependencies": {
+    "@typescript-eslint/parser": "8.15.0",
+    "@typescript-eslint/rule-tester": "8.15.0",
+    "@typescript-eslint/utils": "8.15.0",
+    "eslint": "9.15.0",
+    "prettier": "3.3.3",
+    "typescript": "5.7.2",
+    "vitest": "2.1.5"
+  }
+}
