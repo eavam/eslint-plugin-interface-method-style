@@ -192,10 +192,7 @@ describe("interface-method-style", () => {
             prop() { return "wrong"; }
           }
         `,
-        errors: [
-          { messageId: "whenUseMethod" },
-          // { messageId: "strictFunctionSignature" },
-        ],
+        errors: [{ messageId: "whenUseMethod" }],
       },
       {
         code: `
@@ -209,10 +206,7 @@ describe("interface-method-style", () => {
             data() { return { nested: () => "wrong" }; }
           }
         `,
-        errors: [
-          { messageId: "whenUseMethod" },
-          // { messageId: "strictFunctionSignature" },
-        ],
+        errors: [{ messageId: "whenUseMethod" }],
       },
     ],
   });

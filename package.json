@@ -4,16 +4,22 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "release": "release-it"
+    "release": "release-it",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "build": "tsc"
   },
   "author": "Egor Avakumov (https://github.com/eavam)",
   "license": "MIT",
   "description": "",
   "packageManager": "yarn@4.5.2",
   "devDependencies": {
+    "@release-it/conventional-changelog": "8.0.1",
     "@typescript-eslint/parser": "8.15.0",
     "@typescript-eslint/rule-tester": "8.15.0",
     "@typescript-eslint/utils": "8.15.0",
+    "conventional-changelog-cli": "4.1.0",
     "eslint": "9.15.0",
     "prettier": "3.3.3",
     "release-it": "17.10.0",
@@ -22,8 +28,33 @@
   },
   "release-it": {
     "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "git": {
+      "commitMessage": "chore: release v${version}",
+      "tagName": "v${version}",
+      "push": true,
+      "requireCommits": true,
+      "requireCleanWorkingDir": false
+    },
     "github": {
-      "release": true
+      "release": true,
+      "releaseName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "hooks": {
+      "before:init": [
+        "yarn lint",
+        "yarn test",
+        "yarn build"
+      ],
+      "after:release": "echo Successfully released ${name} v${version} to npm."
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
     }
   }
 }
