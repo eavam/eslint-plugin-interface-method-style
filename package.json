@@ -1,8 +1,21 @@
 {
   "name": "eslint-plugin-interface-method-style",
+  "description": "ESLint plugin to enforce consistent method style between interfaces and their implementations",
   "version": "1.1.0",
+  "author": "Egor Avakumov (https://github.com/eavam)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eavam/eslint-plugin-interface-method-style"
+  },
+  "bugs": {
+    "url": "https://github.com/eavam/eslint-plugin-interface-method-style/issues"
+  },
+  "homepage": "https://github.com/eavam/eslint-plugin-interface-method-style#readme",
   "main": "./dist/index.js",
-  "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "vitest",
     "release": "release-it",
@@ -10,10 +23,14 @@
     "lint": "eslint .",
     "build": "tsc"
   },
-  "author": "Egor Avakumov (https://github.com/eavam)",
-  "license": "MIT",
-  "description": "",
+  "type": "module",
   "packageManager": "yarn@4.5.2",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
   "devDependencies": {
     "@eslint/js": "9.15.0",
     "@release-it/conventional-changelog": "8.0.1",
@@ -30,6 +47,15 @@
     "typescript-eslint": "8.16.0",
     "vitest": "2.1.5"
   },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "typescript",
+    "interface",
+    "method",
+    "style",
+    "consistency"
+  ],
   "release-it": {
     "$schema": "https://unpkg.com/release-it/schema/release-it.json",
     "git": {
