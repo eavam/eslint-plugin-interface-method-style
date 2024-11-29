@@ -1,5 +1,33 @@
 
 
+## 1.1.1 (2024-11-29)
+
+
+### Bug Fixes
+
+* update package version to 1.1.0 for stable release ([60f877a](https://github.com/eavam/eslint-plugin-interface-method-style/commit/60f877af277c3474001a0f6db2ddeb172fec915e))
+
+
+### Features
+
+* remove beta tag and enhance linting configuration ([#5](https://github.com/eavam/eslint-plugin-interface-method-style/issues/5)) ([bd21a0f](https://github.com/eavam/eslint-plugin-interface-method-style/commit/bd21a0f46333541202b1ed774c3ff07a4db965d0))
+
+# 1.1.0 (2024-11-29)
+
+
+### Bug Fixes
+
+* update package version to 1.1.0 for stable release ([60f877a](https://github.com/eavam/eslint-plugin-interface-method-style/commit/60f877af277c3474001a0f6db2ddeb172fec915e))
+
+
+### Features
+
+* remove beta tag and enhance linting configuration ([#5](https://github.com/eavam/eslint-plugin-interface-method-style/issues/5)) ([bd21a0f](https://github.com/eavam/eslint-plugin-interface-method-style/commit/bd21a0f46333541202b1ed774c3ff07a4db965d0))
+
+
+
+
+
 # 1.1.0-beta.0 (2024-11-28)
 
 
