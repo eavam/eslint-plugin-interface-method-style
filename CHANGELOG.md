@@ -1,5 +1,12 @@
 
 
+## [1.1.2](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.1...v1.1.2) (2024-11-29)
+
+
+### Features
+
+* update TypeScript configuration for better compatibility and module resolution ([#8](https://github.com/eavam/eslint-plugin-interface-method-style/issues/8)) ([64f1324](https://github.com/eavam/eslint-plugin-interface-method-style/commit/64f1324d8760cbb23a7e71aecb1365d20c24f18e))
+
 ## 1.1.1 (2024-11-29)
 
 
