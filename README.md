@@ -1,6 +1,6 @@
 # eslint-plugin-interface-method-style
 
-ESLint plugin to enforce consistent method style between interfaces and their implementations.
+> ESLint rule to enforce consistent method implementation styles between TypeScript interfaces and their implementations.
 
 [![npm](https://img.shields.io/npm/v/eslint-plugin-interface-method-style)](https://www.npmjs.com/package/eslint-plugin-interface-method-style)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Feavam%2Feslint-plugin-interface-method-style.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Feavam%2Feslint-plugin-interface-method-style?ref=badge_shield&issueType=license)
