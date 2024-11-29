@@ -18,7 +18,7 @@ type ObjectMethodNode = TSESTree.Property & {
   value: TSESTree.FunctionExpression | TSESTree.ArrowFunctionExpression;
 };
 
-export const rule = createRule({
+export default createRule({
   name: "interface-method-style",
   meta: {
     type: "problem",
