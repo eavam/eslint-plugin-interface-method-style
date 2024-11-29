@@ -33,8 +33,7 @@ describe("interface-method-style", () => {
           
           class Test implements ITest {
             test() {}
-          }
-        `,
+          }`,
       },
       {
         code: `
@@ -44,8 +43,7 @@ describe("interface-method-style", () => {
           
           class Test implements ITest {
             test = () => {}
-          }
-        `,
+          }`,
       },
       {
         code: `
@@ -57,8 +55,7 @@ describe("interface-method-style", () => {
           class Test implements ITest {
             test() {}
             asyncMethod() { return Promise.resolve(); }
-          }
-        `,
+          }`,
       },
       {
         code: `
@@ -70,8 +67,7 @@ describe("interface-method-style", () => {
           class Test implements ITest {
             test() {}
             asyncMethod = () => Promise.resolve();
-          }
-        `,
+          }`,
       },
       {
         code: `
@@ -83,8 +79,7 @@ describe("interface-method-style", () => {
           class Test implements ITest {
             test = () => {}
             asyncArrow = async () => {}
-          }
-        `,
+          }`,
       },
       {
         code: `
@@ -96,8 +91,7 @@ describe("interface-method-style", () => {
           class Test implements ITest {
             method() { return 42; }
             prop = "test";
-          }
-        `,
+          }`,
       },
       {
         code: `
@@ -109,8 +103,27 @@ describe("interface-method-style", () => {
           class Generic implements IWithGenerics<string> {
             getData() { return "test"; }
             setData(value: string) {}
-          }
-        `,
+          }`,
+      },
+      {
+        code: `
+          type ITest = {
+            getData(): void;
+          };
+          
+          class Test implements ITest {
+            getData() { return "test"; }
+          }`,
+      },
+      {
+        code: `
+          type ITest = {
+            getData(): void;
+          };
+          
+          const test: ITest = {
+            getData() { return "test"; }
+          }`,
       },
     ],
     invalid: [
@@ -122,8 +135,7 @@ describe("interface-method-style", () => {
           
           class Test implements ITest {
             test() {}
-          }
-        `,
+          }`,
         errors: [
           {
             messageId: "whenUseArrowFunction",
@@ -138,8 +150,7 @@ describe("interface-method-style", () => {
           
           class Test implements ITest {
             test = () => {}
-          }
-        `,
+          }`,
         errors: [
           {
             messageId: "whenUseMethod",
@@ -156,8 +167,7 @@ describe("interface-method-style", () => {
           class Test implements ITest {
             test() {}
             asyncMethod() { return Promise.resolve(); }
-          }
-        `,
+          }`,
         errors: [
           { messageId: "whenUseArrowFunction" },
           { messageId: "whenUseArrowFunction" },
@@ -173,8 +183,7 @@ describe("interface-method-style", () => {
           class Test implements ITest {
             test = () => {}
             asyncMethod = async () => {}
-          }
-        `,
+          }`,
         errors: [
           { messageId: "whenUseMethod" },
           { messageId: "whenUseMethod" },
@@ -190,8 +199,7 @@ describe("interface-method-style", () => {
           class Mixed implements IMixed {
             method = () => {}
             prop() { return "wrong"; }
-          }
-        `,
+          }`,
         errors: [{ messageId: "whenUseMethod" }],
       },
       {
@@ -204,9 +212,41 @@ describe("interface-method-style", () => {
           class Complex implements IComplex {
             callback = (fn: () => void) => {}
             data() { return { nested: () => "wrong" }; }
-          }
-        `,
+          }`,
         errors: [{ messageId: "whenUseMethod" }],
+      },
+      {
+        code: `
+          type ITest = {
+            getData(): void;
+          };
+          
+          class Test implements ITest {
+            getData = () => "test";
+          }`,
+        errors: [{ messageId: "whenUseMethod" }],
+      },
+      {
+        code: `
+          type ITest = {
+            getData(): void;
+          };
+          
+          const test: ITest = {
+            getData: () => "test",
+          }`,
+        errors: [{ messageId: "whenUseMethod" }],
+      },
+      {
+        code: `
+          type ITest = {
+            getData: () => void;
+          };
+          
+          const test: ITest = {
+            getData() { return "test"; }
+          }`,
+        errors: [{ messageId: "whenUseArrowFunction" }],
       },
     ],
   });
