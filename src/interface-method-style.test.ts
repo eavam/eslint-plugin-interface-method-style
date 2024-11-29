@@ -1,6 +1,6 @@
 import { RuleTester } from "@typescript-eslint/rule-tester";
 import { describe, it } from "vitest";
-import { rule } from "./interface-method-style";
+import interfaceMethodStyle from "./interface-method-style";
 import tsParser from "@typescript-eslint/parser";
 
 RuleTester.afterAll = () => {};
@@ -23,7 +23,7 @@ const ruleTester = new RuleTester({
 });
 
 describe("interface-method-style", () => {
-  ruleTester.run("interface-method-style", rule, {
+  ruleTester.run("interface-method-style", interfaceMethodStyle, {
     valid: [
       {
         code: `

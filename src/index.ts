@@ -1,7 +1,9 @@
-import { rule } from "./interface-method-style";
+import interfaceMethodStyle from "./interface-method-style";
 
-export default {
+const plugin = {
   rules: {
-    "interface-method-style": rule,
+    "interface-method-style": interfaceMethodStyle,
   },
 };
+
+export = plugin;
