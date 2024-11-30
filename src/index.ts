@@ -42,7 +42,10 @@ const config: Linter.Config = {
   },
   languageOptions: {
     parserOptions: {
-      projectService: true,
+      projectService: {
+        allowDefaultProject: ["*.js", "*.mjs", "*.cjs", "*.jsx"],
+        defaultProject: "tsconfig.json",
+      },
       tsconfigRootDir: __dirname,
     },
   },
