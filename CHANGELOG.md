@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.12](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.11...v1.1.5-beta.12) (2024-11-30)
+
+
+### Bug Fixes
+
+* add @types/node dependency and update parserOptions in flatConfig ([1f81c2b](https://github.com/eavam/eslint-plugin-interface-method-style/commit/1f81c2b97a1e7667ed610ebbcf5e2df14f0409b0))
+
 ## [1.1.5-beta.11](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.9...v1.1.5-beta.11) (2024-11-30)
 
 
