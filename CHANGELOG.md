@@ -1,5 +1,7 @@
 
 
+## [1.1.5-beta.1](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.0...v1.1.5-beta.1) (2024-11-30)
+
 ## [1.1.5-beta.0](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.4...v1.1.5-beta.0) (2024-11-30)
 
 ## [1.1.4](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.3...v1.1.4) (2024-11-29)
