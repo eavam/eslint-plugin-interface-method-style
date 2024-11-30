@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.6](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.5...v1.1.5-beta.6) (2024-11-30)
+
+
+### Features
+
+* restructure plugin export to include configs and enforce interface-method-style rule ([83ea6be](https://github.com/eavam/eslint-plugin-interface-method-style/commit/83ea6beb2afb65545145e7627e62e4378aefec52))
+
 ## [1.1.5-beta.5](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.4...v1.1.5-beta.5) (2024-11-30)
 
 
