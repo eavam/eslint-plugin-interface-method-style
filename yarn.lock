@@ -2044,6 +2044,7 @@ __metadata:
     "@release-it/conventional-changelog": "npm:8.0.1"
     "@typescript-eslint/parser": "npm:8.15.0"
     "@typescript-eslint/rule-tester": "npm:8.15.0"
+    "@typescript-eslint/types": "npm:8.16.0"
     "@typescript-eslint/utils": "npm:8.15.0"
     conventional-changelog-cli: "npm:4.1.0"
     eslint: "npm:9.15.0"
