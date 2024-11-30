@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.5](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.4...v1.1.5-beta.5) (2024-11-30)
+
+
+### Bug Fixes
+
+* update package.json and yarn.lock to replace typescript-eslint with @typescript-eslint/types ([56dcea0](https://github.com/eavam/eslint-plugin-interface-method-style/commit/56dcea0a49bc2618798bf2ad32488919d42a0740))
+
 ## [1.1.5-beta.4](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.3...v1.1.5-beta.4) (2024-11-30)
 
 
