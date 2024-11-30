@@ -18,6 +18,9 @@ const flatConfig = {
   },
   languageOptions: {
     parser: typescriptParser,
+    parserOptions: {
+      tsconfigRootDir: process.cwd(),
+    },
   },
 } as const;
 
