@@ -17,9 +17,7 @@ const flatConfig = {
     "interface-method-style/interface-method-style": "error",
   },
   languageOptions: {
-    languageOptions: {
-      parser: tseslint.parser,
-    },
+    parser: tseslint.parser,
   },
 } as const;
 
