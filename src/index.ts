@@ -8,14 +8,20 @@ const basePlugin = {
   },
 };
 
-export = {
-  configs: {
-    plugins: {
-      "interface-method-style": basePlugin,
-    },
-    rules: {
-      "interface-method-style/interface-method-style": "error",
-    },
+const flatConfig = {
+  plugins: {
+    "interface-method-style": basePlugin,
   },
+  rules: {
+    "interface-method-style/interface-method-style": "error",
+  },
+  languageOptions: {
+    ecmaVersion: 2018,
+    sourceType: "module",
+  },
+};
+
+export = {
+  flatConfig: flatConfig,
   ...basePlugin,
 };
