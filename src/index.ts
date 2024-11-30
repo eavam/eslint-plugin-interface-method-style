@@ -19,6 +19,7 @@ const flatConfig = {
   languageOptions: {
     parser: typescriptParser,
     parserOptions: {
+      projectService: true,
       tsconfigRootDir: process.cwd(),
     },
   },
