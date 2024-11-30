@@ -1,5 +1,13 @@
 
 
+## [1.1.5-beta.11](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.9...v1.1.5-beta.11) (2024-11-30)
+
+
+### Bug Fixes
+
+* downgrade version to 1.1.5-beta.8 and update TypeScript parser import ([5600bbe](https://github.com/eavam/eslint-plugin-interface-method-style/commit/5600bbe3ee37f8a9f4eb508cd1723e0046cb9d46))
+* simplify languageOptions structure in flatConfig ([6904940](https://github.com/eavam/eslint-plugin-interface-method-style/commit/6904940bffe6898ec6338556431cc20ad5c0a46e))
+
 ## [1.1.5-beta.10](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.9...v1.1.5-beta.10) (2024-11-30)
 
 
