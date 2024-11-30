@@ -1,5 +1,23 @@
 
 
+## [1.1.5](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.4...v1.1.5) (2024-11-30)
+
+
+### Features
+
+*  add TS improvements and plugin restructuring ([#11](https://github.com/eavam/eslint-plugin-interface-method-style/issues/11)) ([b728a90](https://github.com/eavam/eslint-plugin-interface-method-style/commit/b728a904d7bd55091b1007508f0b4fcc587a5104))
+
+## [1.1.5-beta.17](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.4...v1.1.5-beta.17) (2024-11-30)
+
+
+### Features
+
+*  add TS improvements and plugin restructuring ([#11](https://github.com/eavam/eslint-plugin-interface-method-style/issues/11)) ([b728a90](https://github.com/eavam/eslint-plugin-interface-method-style/commit/b728a904d7bd55091b1007508f0b4fcc587a5104))
+
+
+
+
+
 ## [1.1.5-beta.17](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.16...v1.1.5-beta.17) (2024-11-30)
 
 
