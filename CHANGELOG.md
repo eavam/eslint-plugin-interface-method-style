@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.10](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.9...v1.1.5-beta.10) (2024-11-30)
+
+
+### Bug Fixes
+
+* simplify languageOptions structure in flatConfig ([6904940](https://github.com/eavam/eslint-plugin-interface-method-style/commit/6904940bffe6898ec6338556431cc20ad5c0a46e))
+
 ## [1.1.5-beta.9](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.8...v1.1.5-beta.9) (2024-11-30)
 
 
