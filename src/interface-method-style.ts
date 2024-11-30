@@ -119,7 +119,7 @@ export default createRule({
 
           const tsNode = parserServices.esTreeNodeToTSNodeMap.get(node.parent);
           const objectType = checker.getContextualType(tsNode);
-          
+
           if (!objectType) {
             return;
           }
@@ -139,15 +139,18 @@ export default createRule({
               });
             }
           }
-          
+
           if (declaration.kind === ts.SyntaxKind.PropertySignature) {
             const propertyType = checker.getTypeAtLocation(declaration);
             const signatures = checker.getSignaturesOfType(
               propertyType,
               ts.SignatureKind.Call,
             );
-            
-            if (signatures.length > 0 && node.value.type === AST_NODE_TYPES.FunctionExpression) {
+
+            if (
+              signatures.length > 0 &&
+              node.value.type === AST_NODE_TYPES.FunctionExpression
+            ) {
               context.report({
                 node,
                 messageId: "whenUseArrowFunction",

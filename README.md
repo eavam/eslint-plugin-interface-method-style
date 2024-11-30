@@ -3,6 +3,8 @@
 > ESLint rule to enforce consistent method implementation styles between TypeScript interfaces and their implementations.
 
 [![npm](https://img.shields.io/npm/v/eslint-plugin-interface-method-style)](https://www.npmjs.com/package/eslint-plugin-interface-method-style)
+[![npm](https://img.shields.io/npm/dt/eslint-plugin-interface-method-style)](https://www.npmjs.com/package/eslint-plugin-interface-method-style)
+![GitHub](https://img.shields.io/github/license/eavam/eslint-plugin-interface-method-style)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Feavam%2Feslint-plugin-interface-method-style.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Feavam%2Feslint-plugin-interface-method-style?ref=badge_shield&issueType=license)
 
 ## Table of Contents
@@ -20,9 +22,9 @@ In large TypeScript codebases, maintaining consistency between interfaces and th
 
 ## Features
 
-- 🎯 **Method Style Consistency**: Ensures that methods and properties use the same implementation style as defined in interfaces.
-- 🚀 **Supports Classes and Object Literals**: Works seamlessly with both class-based implementations and object literals.
-- ✨ **TypeScript Compatibility**: Fully supports TypeScript interfaces and type aliases.
+- 🎯 **Method Style Consistency**: Ensures consistent method and property styles.
+- 🚀 **Supports Classes and Object Literals**: Works with classes and object literals.
+- ✨ **TypeScript Compatibility**: Supports TypeScript interfaces and type aliases.
 
 ## Installation
 
@@ -46,7 +48,22 @@ pnpm add eslint-plugin-interface-method-style --save-dev
 
 ## Usage
 
-Add `interface-method-style` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `interface-method-style` to your ESLint configuration.
+
+### Config (eslint.config.mjs)
+
+```js
+import interfaceMethodStyle from "eslint-plugin-interface-method-style";
+
+export default [
+  // ...
+  interfaceMethodStyle.configs.recommended,
+];
+```
+
+### Legacy Config (.eslintrc.json)
+
+Add `interface-method-style` to the plugins section of your configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
