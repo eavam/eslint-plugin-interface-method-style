@@ -1,5 +1,13 @@
 
 
+## [1.1.5-beta.9](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.8...v1.1.5-beta.9) (2024-11-30)
+
+
+### Features
+
+* add @typescript-eslint/parser as a dev dependency in package.json and yarn.lock ([d648dd6](https://github.com/eavam/eslint-plugin-interface-method-style/commit/d648dd67558159498e519cc9031c8139e3d21e95))
+* update peer dependencies and refactor flatConfig structure in index.ts ([969e1b2](https://github.com/eavam/eslint-plugin-interface-method-style/commit/969e1b2af72c8606319e19e1ae9099608043a565))
+
 ## [1.1.5-beta.8](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.7...v1.1.5-beta.8) (2024-11-30)
 
 
