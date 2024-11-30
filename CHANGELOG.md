@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.8](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.7...v1.1.5-beta.8) (2024-11-30)
+
+
+### Features
+
+* add flatConfig to export structure in index.ts ([329ebde](https://github.com/eavam/eslint-plugin-interface-method-style/commit/329ebde14662af9ce77c7df45d0eaebf946d1951))
+
 ## [1.1.5-beta.7](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.6...v1.1.5-beta.7) (2024-11-30)
 
 
