@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.13](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.12...v1.1.5-beta.13) (2024-11-30)
+
+
+### Bug Fixes
+
+* enable projectService in parserOptions for improved TypeScript support ([66ace43](https://github.com/eavam/eslint-plugin-interface-method-style/commit/66ace433db0c3a53b63b719c3fff82666f58ccd2))
+
 ## [1.1.5-beta.12](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.11...v1.1.5-beta.12) (2024-11-30)
 
 
