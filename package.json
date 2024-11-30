@@ -12,6 +12,12 @@
     "url": "https://github.com/eavam/eslint-plugin-interface-method-style/issues"
   },
   "homepage": "https://github.com/eavam/eslint-plugin-interface-method-style#readme",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "main": "./dist/index.js",
   "files": [
     "dist"
