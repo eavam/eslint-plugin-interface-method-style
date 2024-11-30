@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.7](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.6...v1.1.5-beta.7) (2024-11-30)
+
+
+### Bug Fixes
+
+* update rule path for interface-method-style in index.ts ([6b3f03a](https://github.com/eavam/eslint-plugin-interface-method-style/commit/6b3f03ae26adf6a708a563fb83a26cc1e7d0b013))
+
 ## [1.1.5-beta.6](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.5...v1.1.5-beta.6) (2024-11-30)
 
 
