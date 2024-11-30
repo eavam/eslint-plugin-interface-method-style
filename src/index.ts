@@ -1,27 +1,33 @@
 import interfaceMethodStyle from "./interface-method-style.js";
 import { name, version } from "../package.json";
+import tseslint from "typescript-eslint";
 
-const basePlugin = {
-  meta: { name, version },
-  rules: {
-    "interface-method-style": interfaceMethodStyle,
-  },
+const rules = {
+  "interface-method-style": interfaceMethodStyle,
 };
 
 const flatConfig = {
   plugins: {
-    "interface-method-style": basePlugin,
+    "interface-method-style": {
+      meta: { name, version },
+      rules,
+    },
   },
   rules: {
     "interface-method-style/interface-method-style": "error",
   },
   languageOptions: {
-    ecmaVersion: 2018,
-    sourceType: "module",
+    languageOptions: {
+      parser: tseslint.parser,
+    },
   },
+} as const;
+
+const plugin = {
+  configs: {
+    flat: flatConfig,
+  },
+  rules,
 };
 
-export = {
-  flatConfig: flatConfig,
-  ...basePlugin,
-};
+export = plugin;
