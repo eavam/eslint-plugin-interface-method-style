@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.3](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.2...v1.1.5-beta.3) (2024-11-30)
+
+
+### Bug Fixes
+
+* update build script to clean dist directory before compilation and add rimraf as a dependency ([d6dac84](https://github.com/eavam/eslint-plugin-interface-method-style/commit/d6dac84f660da649020aafc9b79e57814f35604c))
+
 ## [1.1.5-beta.2](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.1...v1.1.5-beta.2) (2024-11-30)
 
 
