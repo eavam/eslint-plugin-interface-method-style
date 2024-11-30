@@ -40,6 +40,12 @@ const config: Linter.Config = {
   rules: {
     "interface-method-style/interface-method-style": "error",
   },
+  languageOptions: {
+    parserOptions: {
+      projectService: true,
+      tsconfigRootDir: __dirname,
+    },
+  },
 };
 
 // const legacyConfig = {};
