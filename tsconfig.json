@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "esModuleInterop": true,
-    "module": "CommonJS",
+
     "outDir": "./dist",
     "resolveJsonModule": true,
     "rootDir": "src",
-    "skipLibCheck": true,
+
     "sourceMap": true,
+
+    "lib": ["es2021"],
+    "module": "node16",
+    "target": "es2021",
+
     "strict": true,
-    "target": "ES2022"
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node16"
   },
   "include": ["./src/**/*"],
   "exclude": ["./src/**/*.test.ts"]

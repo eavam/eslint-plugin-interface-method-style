@@ -1,6 +1,6 @@
 import interfaceMethodStyle from "./interface-method-style.js";
 import { name, version } from "../package.json";
-import tseslint from "typescript-eslint";
+import * as typescriptParser from "@typescript-eslint/parser";
 
 const rules = {
   "interface-method-style": interfaceMethodStyle,
@@ -17,7 +17,7 @@ const flatConfig = {
     "interface-method-style/interface-method-style": "error",
   },
   languageOptions: {
-    parser: tseslint.parser,
+    parser: typescriptParser,
   },
 } as const;
 
