@@ -1,5 +1,12 @@
 
 
+## [1.1.5-beta.4](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.3...v1.1.5-beta.4) (2024-11-30)
+
+
+### Bug Fixes
+
+* add typescript-eslint to dependencies in package.json ([d2a3648](https://github.com/eavam/eslint-plugin-interface-method-style/commit/d2a3648d004603878702d803a11de7a6d6903138))
+
 ## [1.1.5-beta.3](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5-beta.2...v1.1.5-beta.3) (2024-11-30)
 
 
