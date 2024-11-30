@@ -14,7 +14,7 @@ export = {
       "interface-method-style": basePlugin,
     },
     rules: {
-      "@typescript-eslint/interface-method-style": "error",
+      "interface-method-style/interface-method-style": "error",
     },
   },
   ...basePlugin,
