@@ -1,4 +1,16 @@
+# Changelog
 
+# [2.0.0](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.6...v2.0.0) (2025-06-13)
+
+
+### Features
+
+* optimize interface-method-style rule performance and add tsup build system ([#13](https://github.com/eavam/eslint-plugin-interface-method-style/issues/13)) ([8570a14](https://github.com/eavam/eslint-plugin-interface-method-style/commit/8570a14aa87f5a1f0b574f7a89ae99e18185c56a))
+
+
+### BREAKING CHANGES
+
+* Rule now requires TypeScript type information and processes at class level
 
 ## [1.1.6](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.5...v1.1.6) (2025-03-28)
 
