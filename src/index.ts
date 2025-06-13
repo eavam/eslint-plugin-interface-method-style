@@ -21,9 +21,11 @@ const config: Linter.Config = {
   },
 };
 
-module.exports = {
+const pluginExport = {
   ...plugin,
   configs: {
     recommended: config,
   },
 };
+
+export default pluginExport;
