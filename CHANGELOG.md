@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v2.0.0...v2.0.1) (2025-07-14)
+
+
+### Bug Fixes
+
+* exports for flat config ([#14](https://github.com/eavam/eslint-plugin-interface-method-style/issues/14)) ([2739f0c](https://github.com/eavam/eslint-plugin-interface-method-style/commit/2739f0c1957c2abcc67d05447afbc1bc5d4c0589))
+
 # [2.0.0](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v1.1.6...v2.0.0) (2025-06-13)
 
 
