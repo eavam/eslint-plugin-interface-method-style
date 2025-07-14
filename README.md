@@ -64,7 +64,7 @@ import interfaceMethodStyle from "eslint-plugin-interface-method-style";
 
 export default [
   // ...
-  interfaceMethodStyle.configs.recommended,
+  interfaceMethodStyle.configs["flat/recommended"],
 ];
 ```
 
