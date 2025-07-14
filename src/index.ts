@@ -1,17 +1,8 @@
 import interfaceMethodStyle from "./interface-method-style.js";
 import { type ESLint, type Linter } from "eslint";
-import { readFileSync } from "node:fs";
-import { dirname, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import pkg from "../package.json" assert { type: "json" };
 
 const namePlugin = "interface-method-style";
-
-const pkg = JSON.parse(
-  readFileSync(
-    resolve(dirname(fileURLToPath(import.meta.url)), "../package.json"),
-    "utf8",
-  ),
-);
 
 type PluginWithConfigs = ESLint.Plugin & { configs: Record<string, unknown> };
 
