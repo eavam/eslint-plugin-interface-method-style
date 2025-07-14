@@ -11,10 +11,8 @@ export enum MessageId {
   NeedMethod = "whenUseMethod",
 }
 
-interface Options {
-  prefer?: "method" | "arrow";
-  ignoreStatic?: boolean;
-}
+type Prefer = "method" | "arrow";
+type Options = [{ prefer?: Prefer; ignoreStatic?: boolean }];
 
 type FunctionNode = (
   | TSESTree.MethodDefinition
@@ -48,7 +46,7 @@ interface InterfaceMethodInfo {
   hasOverloads: boolean;
 }
 
-export default createRule<[Options], MessageId>({
+export default createRule<Options, MessageId>({
   name: "interface-method-style",
   meta: {
     type: "suggestion",
@@ -65,7 +63,10 @@ export default createRule<[Options], MessageId>({
       {
         type: "object",
         properties: {
-          prefer: { type: "string", enum: ["method", "arrow"] },
+          prefer: {
+            type: "string",
+            enum: ["method", "arrow"] as const,
+          },
           ignoreStatic: { type: "boolean" },
         },
         additionalProperties: false,
@@ -74,7 +75,9 @@ export default createRule<[Options], MessageId>({
   },
   defaultOptions: [{ prefer: undefined, ignoreStatic: true }],
 
-  create(context, [{ prefer, ignoreStatic = true }]) {
+  create(context, [options]) {
+    const { prefer, ignoreStatic = true } = options;
+
     const parserServices = ESLintUtils.getParserServices(context);
     const checker = parserServices.program.getTypeChecker();
     const typeCache = new WeakMap<ts.Type, ts.Symbol[]>();

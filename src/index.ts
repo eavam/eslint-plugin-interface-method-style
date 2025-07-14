@@ -1,44 +1,34 @@
-import interfaceMethodStyle from "./interface-method-style.js";
-import { type ESLint, type Linter } from "eslint";
+import interfaceMethodStyle from "./interface-method-style.ts";
 import pkg from "../package.json" assert { type: "json" };
 
 const namePlugin = "interface-method-style";
 
-type PluginWithConfigs = ESLint.Plugin & { configs: Record<string, unknown> };
+const rules = {
+  "interface-method-style": interfaceMethodStyle,
+};
 
-const plugin: PluginWithConfigs = {
+const plugin = {
   meta: {
     name: pkg.name,
     version: pkg.version,
-    namespace: namePlugin,
-  },
-  rules: {
-    "interface-method-style": interfaceMethodStyle,
   },
   configs: {},
-} as unknown as PluginWithConfigs;
+  rules,
+};
 
-const flatRecommended = [
-  {
-    plugins: {
-      [namePlugin]: plugin as unknown as ESLint.Plugin,
-    },
+Object.assign(plugin.configs, {
+  recommended: {
+    plugins: { [namePlugin]: plugin },
     rules: {
       "interface-method-style/interface-method-style": "error",
     },
   },
-] as unknown as Linter.Config[];
-
-const legacyRecommended = {
-  plugins: [namePlugin],
-  rules: {
-    "interface-method-style/interface-method-style": "error",
+  "recommended-legacy": {
+    plugins: [namePlugin],
+    rules: {
+      "interface-method-style/interface-method-style": "error",
+    },
   },
-} as unknown as Linter.Config;
-
-Object.assign(plugin.configs, {
-  "flat/recommended": flatRecommended,
-  recommended: legacyRecommended,
 });
 
 export default plugin;

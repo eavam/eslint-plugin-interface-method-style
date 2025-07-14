@@ -64,17 +64,33 @@ import interfaceMethodStyle from "eslint-plugin-interface-method-style";
 
 export default [
   // ...
-  interfaceMethodStyle.configs["flat/recommended"],
+  interfaceMethodStyle.configs.recommended,
 ];
 ```
 
 ### Legacy Config (.eslintrc.json)
 
-Add `interface-method-style` to the plugins section of your configuration file. You can omit the `eslint-plugin-` prefix:
+Use the built-in preset for classic configuration files:
 
 ```json
 {
-  "plugins": ["interface-method-style"]
+  "plugins": ["interface-method-style"],
+  "extends": ["plugin:interface-method-style/recommended-legacy"]
+}
+```
+
+If you need to override options (e.g. `prefer` or `ignoreStatic`), add a `rules` section as usual:
+
+```json
+{
+  "plugins": ["interface-method-style"],
+  "extends": ["plugin:interface-method-style/recommended-legacy"],
+  "rules": {
+    "interface-method-style/interface-method-style": [
+      "error",
+      { "prefer": "method" }
+    ]
+  }
 }
 ```
 
