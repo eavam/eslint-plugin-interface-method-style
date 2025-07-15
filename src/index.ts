@@ -1,24 +1,30 @@
-import interfaceMethodStyle from "./interface-method-style.ts";
+import interfaceMethodStyle from "./interface-method-style";
 import pkg from "../package.json" assert { type: "json" };
+import type { Linter, Rule, ESLint } from "eslint";
 
 const namePlugin = "interface-method-style";
 
-const rules = {
-  "interface-method-style": interfaceMethodStyle,
+type Configs = {
+  readonly recommended: Linter.Config;
+  readonly "recommended-legacy": Linter.LegacyConfig;
 };
 
-const plugin = {
+const rules: Record<string, Rule.RuleModule> = {
+  [namePlugin]: interfaceMethodStyle as unknown as Rule.RuleModule,
+};
+
+const plugin: ESLint.Plugin & { configs: Configs } = {
   meta: {
     name: pkg.name,
     version: pkg.version,
   },
-  configs: {},
+  configs: {} as Configs,
   rules,
 };
 
-Object.assign(plugin.configs, {
+const configs: Configs = {
   recommended: {
-    plugins: { [namePlugin]: plugin },
+    plugins: { [namePlugin]: plugin as unknown as ESLint.Plugin },
     rules: {
       "interface-method-style/interface-method-style": "error",
     },
@@ -29,6 +35,8 @@ Object.assign(plugin.configs, {
       "interface-method-style/interface-method-style": "error",
     },
   },
-});
+} as const;
+
+Object.assign(plugin.configs, configs);
 
 export default plugin;
