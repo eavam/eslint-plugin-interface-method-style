@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.4](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v2.0.3...v2.0.4) (2025-07-16)
+
+
+### Bug Fixes
+
+* exports ([#17](https://github.com/eavam/eslint-plugin-interface-method-style/issues/17)) ([9160e7b](https://github.com/eavam/eslint-plugin-interface-method-style/commit/9160e7b0df4814277d85ca439589030bda1811a1))
+
 ## [2.0.3](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v2.0.2...v2.0.3) (2025-07-15)
 
 
