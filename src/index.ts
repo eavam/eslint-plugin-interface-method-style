@@ -9,7 +9,7 @@ type Configs = {
   readonly "recommended-legacy": Linter.LegacyConfig;
 };
 
-const rules: Record<string, Rule.RuleModule> = {
+export const rules: Record<string, Rule.RuleModule> = {
   [namePlugin]: interfaceMethodStyle as unknown as Rule.RuleModule,
 };
 
@@ -22,7 +22,7 @@ const plugin: ESLint.Plugin & { configs: Configs } = {
   rules,
 };
 
-const configs: Configs = {
+export const configs: Configs = {
   recommended: {
     plugins: { [namePlugin]: plugin as unknown as ESLint.Plugin },
     rules: {
@@ -35,8 +35,8 @@ const configs: Configs = {
       "interface-method-style/interface-method-style": "error",
     },
   },
-} as const;
+};
 
 Object.assign(plugin.configs, configs);
 
-export default plugin;
+export default { configs, rules };
