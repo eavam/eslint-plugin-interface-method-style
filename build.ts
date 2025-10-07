@@ -52,7 +52,7 @@ async function build() {
       stdio: 'inherit'
     });
 
-    // Выводим статистику
+    // Output statistics
     const jsOutputs = result.outputs.filter(out => out.kind === 'entry-point');
     console.log('✅ Build completed successfully!');
     console.log(`📦 Generated ${jsOutputs.length} bundle(s):`);
