@@ -22,7 +22,7 @@ async function build() {
     const result = await Bun.build({
       entrypoints: ['src/index.ts'],
       outdir: 'dist',
-      format: 'esm', // ESM как основной формат
+      format: 'esm', // ESM as the main format
       target: 'node',
       sourcemap: 'linked',
       external: [
