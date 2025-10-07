@@ -29,7 +29,7 @@ async function build() {
         '@typescript-eslint/*',
         'typescript'
       ],
-      // Дополнительные опции для лучшего бандлинга
+      // Additional options for better bundling
       minify: {
         whitespace: true,
         syntax: true,
