@@ -15,6 +15,7 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "verbatimModuleSyntax": true,
+    "types": ["bun-types"],
     "noEmit": true
   },
   "include": ["./src/**/*"],

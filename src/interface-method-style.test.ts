@@ -1,5 +1,5 @@
 import { RuleTester } from "@typescript-eslint/rule-tester";
-import { describe, it } from "vitest";
+import { describe, it } from "bun:test";
 import interfaceMethodStyle, { MessageId } from "./interface-method-style";
 import tsParser from "@typescript-eslint/parser";
 

@@ -35,16 +35,16 @@ In large TypeScript codebases, maintaining consistency between interfaces and th
 
 ## Installation
 
+### Bun
+
+```sh
+bun add -d eslint-plugin-interface-method-style
+```
+
 ### npm
 
 ```sh
 npm install eslint-plugin-interface-method-style --save-dev
-```
-
-### Yarn
-
-```sh
-yarn add eslint-plugin-interface-method-style --dev
 ```
 
 ### pnpm
