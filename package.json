@@ -23,10 +23,9 @@
     "release": "release-it",
     "type-check": "tsc --noEmit",
     "lint": "eslint .",
-    "build": "tsup"
+    "build": "bun build.ts"
   },
   "type": "module",
-  "packageManager": "yarn@4.9.2",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -42,20 +41,18 @@
   "devDependencies": {
     "@eslint/js": "9.29.0",
     "@release-it/conventional-changelog": "10.0.1",
+    "@types/bun": "1.2.23",
     "@types/node": "24.0.1",
     "@typescript-eslint/parser": "8.34.0",
     "@typescript-eslint/rule-tester": "8.34.0",
-    "@vitest/coverage-v8": "3.2.3",
     "conventional-changelog-cli": "5.0.0",
     "eslint": "9.29.0",
     "eslint-config-prettier": "10.1.5",
     "globals": "16.2.0",
     "prettier": "3.5.3",
     "release-it": "19.0.3",
-    "tsup": "8.5.0",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.34.0",
-    "vitest": "3.2.3"
+    "typescript-eslint": "8.34.0"
   },
   "keywords": [
     "eslint",
@@ -84,9 +81,9 @@
     },
     "hooks": {
       "before:init": [
-        "yarn lint",
-        "yarn test --run",
-        "yarn build"
+        "bun run lint",
+        "bun test",
+        "bun run build"
       ],
       "after:release": "echo Successfully released ${name} v${version} to npm."
     },
