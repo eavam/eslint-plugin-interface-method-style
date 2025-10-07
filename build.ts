@@ -33,7 +33,7 @@ async function build() {
       minify: {
         whitespace: true,
         syntax: true,
-        identifiers: false, // сохраняем читаемые имена
+        identifiers: false, // preserve readable names
       },
       banner: '// Built with Bun 🚀',
     });
