@@ -65,7 +65,7 @@ async function build() {
     }
 
   } catch (error) {
-    console.error('❌ Build failed:', error.message);
+    console.error('❌ Build failed:', String(error));
     process.exit(1);
   }
 }
