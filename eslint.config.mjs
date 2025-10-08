@@ -5,7 +5,7 @@ import eslintConfigPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { ignores: ["**/.yarn/*", "**/dist/*"] },
+  { ignores: ["**/bun.lock", "**/dist/*", "**/bunfig.toml"] },
   {
     files: ["**/*.{js,mjs,cjs,ts}"],
     languageOptions: { globals: globals.node },

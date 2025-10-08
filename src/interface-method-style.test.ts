@@ -1,11 +1,11 @@
 import { RuleTester } from "@typescript-eslint/rule-tester";
-import { describe, it } from "vitest";
+import { describe, test } from "bun:test";
 import interfaceMethodStyle, { MessageId } from "./interface-method-style";
 import tsParser from "@typescript-eslint/parser";
 
 RuleTester.afterAll = () => {};
 RuleTester.describe = describe;
-RuleTester.it = it;
+RuleTester.it = test;
 
 const ruleTester = new RuleTester({
   languageOptions: {

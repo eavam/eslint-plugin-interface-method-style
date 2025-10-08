@@ -12,10 +12,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true
+    "declaration": true,
+    "declarationMap": true
   },
   "include": ["./src/**/*"],
   "exclude": ["./src/**/*.test.ts"]

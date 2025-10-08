@@ -14,12 +14,12 @@ Thank you for your interest in contributing! This document provides guidelines f
 2. **Install dependencies**
 
    ```bash
-   yarn install
+   bun install
    ```
 
 3. **Run tests**
    ```bash
-   yarn test
+   bun test
    ```
 
 ## Development Workflow
@@ -40,11 +40,11 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 3. **Run the development checks**
    ```bash
-   yarn lint          # Check code style
-   yarn type-check    # Check TypeScript types
-   yarn test          # Run tests
-   yarn test:coverage # Check test coverage
-   yarn build         # Ensure it builds
+   bun run lint                # Check code style
+   bun run type-check          # Check TypeScript types
+   bun test                    # Run tests
+   bun test --coverage         # Check test coverage
+   bun run build               # Ensure it builds
    ```
 
 ### Code Style
