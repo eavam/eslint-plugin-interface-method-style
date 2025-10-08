@@ -1,5 +1,12 @@
 # Changelog
 
+# [2.1.0](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v2.0.4...v2.1.0) (2025-10-08)
+
+
+### Features
+
+* switch to bun ([#19](https://github.com/eavam/eslint-plugin-interface-method-style/issues/19)) ([f5fc5fa](https://github.com/eavam/eslint-plugin-interface-method-style/commit/f5fc5fa0d26b40112035ea8e0a61dfeff8a2c194))
+
 ## [2.0.4](https://github.com/eavam/eslint-plugin-interface-method-style/compare/v2.0.3...v2.0.4) (2025-07-16)
 
 
