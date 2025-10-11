@@ -17,6 +17,7 @@
 - [Configuration Options](#configuration-options)
 - [Examples](#examples)
 - [Advanced Use Cases](#advanced-use-cases)
+- [Resources](#resources)
 - [License](#license)
 
 ## Introduction
@@ -420,6 +421,10 @@ class UserRepository extends BaseRepository<User> {
   }
 }
 ```
+
+## Resources
+
+- 📝 [Keeping TypeScript Interfaces and Implementations in Sync](https://dev.to/eavam/keeping-typescript-interfaces-and-implementations-in-sync-4n3a) - A detailed article about this package and how to use it effectively
 
 ## License
 
